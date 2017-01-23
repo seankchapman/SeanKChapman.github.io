@@ -11,6 +11,12 @@ body {
   padding-bottom: 230px;
 }
 
+#drawLink {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+
 .large-font {
   font-size: 36px !important;
 }
