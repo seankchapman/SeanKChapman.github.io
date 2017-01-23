@@ -81,3 +81,4 @@ function init () {
         brush.size = this.value;
     });
 }
+$(init);
