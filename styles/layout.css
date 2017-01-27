@@ -11,6 +11,24 @@ body {
   padding-bottom: 230px;
 }
 
+#particles-js {
+  /*
+  width: 100%;
+  height: 100%;
+  background-image: url('');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  */
+
+    width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -50;
+}
+
 #drawLink {
   font-size: 16px;
   display: flex;
