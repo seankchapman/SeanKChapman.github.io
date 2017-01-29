@@ -4,24 +4,15 @@ body {
 
 #header {
   font-size: 24px;
-  display: flex;
+  /*display: flex; */
   justify-content: center;
-  height: 500px;
+  height: 100px;
   padding-top: 230px;
-  padding-bottom: 230px;
+  padding-bottom: 10px;
 }
 
 #particles-js {
-  /*
   width: 100%;
-  height: 100%;
-  background-image: url('');
-  background-size: cover;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  */
-
-    width: 100%;
   height: 120%;
   position: absolute;
   top: 0;
@@ -29,10 +20,17 @@ body {
   z-index: -50;
 }
 
+#description {
+  font-size: 15;
+  display: flex;
+  justify-content: center;
+}
+
 #drawLink {
   font-size: 16px;
   display: flex;
   justify-content: center;
+  padding-top: 300px;
 }
 
 .large-font {
@@ -44,7 +42,7 @@ body {
 }
 
 .appear-up {
-  -webkit-animation: appear-up 0.5s ease forwards;
+  -webkit-animation: appear-up 1s ease forwards;
 }
 
 @-webkit-keyframes fade {
@@ -55,4 +53,18 @@ body {
 @-webkit-keyframes appear-up {
   20% {opacity: 0;transform: translateY(0.6em);}
   100% {opacity: 1; transform: translateY(0em);}
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container :: after {
+  content: '';
+  width: 100%;
+}
+
+img.resize {
+  width: 200px;
+  height: 200px;
 }
