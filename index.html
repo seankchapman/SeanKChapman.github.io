@@ -4,21 +4,112 @@
     <link rel="stylesheet" type="text/css" href="styles/layout.css">
   </head>
   <body>
-    <div id="header" class="large-font appear-up flex-container">
+    <div id="header" class="large-font flex-container">
       Sean Chapman
     </div>
-    <div id="description" class="flex-container appear-up">
-      <img class="resize" src="assets/img/prof.png"></img>
+    <div id="description">
+        <img class="resize pad" src = "assets/img/prof.png">
+    </div>
+    <div id="optionBar" class="center">
+        <table align="center">
+            <tr>
+                Computer Science at Univerity of Maryland
+            </tr>
+            <tr>
+                <td><a href="assets/resume.pdf">Resume</a></td>
+                <td><a href=#contact>Contact</a></td>
+                <td><a href=#about>About</a><td>
+                <td><a href=#projects>Projects</a></td>
+            </tr>
+        </table>
     </div>
 
-    <div id ="particles-js"></div>
+    <hr>
+
+    <div id="header" class="large-font flex-container">
+        <a name="contact">
+        Contact
+    </div>
+    <div id="description">
+        <p>
+        I can be reached through both my personal email and school email.
+        <u>
+        Please send any academic inquiries to my school email and business inquiries
+        to my personal email.</u>
+        For phone and address information, please refer to my resume.
+        If contacting me by phone, please send a text message or leave a voicemail
+        (I will not pick up calls from unfamiliar numbers).
+        <br/>
+        <br>
+        <br>
+        <tr>
+            <td>Personal: </td>
+            <td><a href="mailto:seankchapman@gmail.com">seankchapman@gmail.com</a></td>
+        </tr>
+        <br>
+        <tr>
+            <td>Academic: </td>
+            <td><a href="mailto:skchapma@umd.edu">skchapma@umd.edu</a></td>
+        </tr>
+    </div>
+
+    <hr>
+
+    <div id="header" class="large-font flex-container">
+        <a name="about">
+        About
+    </div>
+    <div id="description">
+        <p>
+        I am a college freshman from Palo Alto, CA studying computer science at the
+         University of Maryland. Currently, my interests in software development involve
+          Android/iOS development in Java and Swift, as well as web programming with HTML, CSS, Javascript,
+         and Node.js. I have roughly four years of programming experience in Java and Python.
+         Outside of programming, I enjoy fishing, drawing, robotics, and playing video games.
+         <br/>
+    </div>
+
+    <hr>
+
+    <div id="header" class="large-font flex-container">
+        Projects
+    </div>
+    <div id="description">
+
+        <p>
+        <u>Maze</u>
+        <br>
+        Written in Java, this project uses the Recursive
+        Depth-first-search algorithm to generate a unique maze. The algorithm works
+        by randomly choosing a cell in an arrayList full of cells.
+        Then a neighbor to the current cell being observed is randomly chosen, and the
+        the wall that separates the two cells is deleted. The neighbor is then
+        marked as the current cell. Each cell is marked either visited or unvisited,
+        which corresponds to whether or not the cell will be added to the current cell's list
+        of neighbors. If the one of the neighbors has already been visited, that cell will not
+        be counted as a neighbor.
+        <br/>
+        <br>
+        Sample runs
+        <br>
+        <tr>
+            <td><img class="resize"src="assets/img/maze1.png"</td>
+            <td><img class="resize"src="assets/img/maze2.png"</td>
+        </tr>
+        <br>
+        <tr>
+            <td><a href="assets/java/Maze.java">Maze.java</a></td>
+            <td><a href="assets/java/Frame.java">Frame.java</a></td>
+            <td><a href="assets/java/Cell.java">Cell.java</a></td>
+        </tr>
+
+    </div>
+
+
+    <!-- <div id ="particles-js"></div> -->
 
     <script src="assets/particle/particles.min.js"></script>
     <script src="assets/particle/app.js"></script>
-
-    <div id="drawLink">
-    	<a href="assets/draw.html">Draw</a>
-    </div>
 
   </body>
 </html>

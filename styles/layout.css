@@ -4,11 +4,11 @@ body {
 
 #header {
   font-size: 24px;
-  /*display: flex; */
+  display: flex;
   justify-content: center;
-  height: 100px;
-  padding-top: 230px;
-  padding-bottom: 10px;
+  /* height: 100px; */
+  padding-top: 80px;
+  padding-bottom: 30px;
 }
 
 #particles-js {
@@ -24,6 +24,15 @@ body {
   font-size: 15;
   display: flex;
   justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+#optionBar {
+    font-size: 15;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 #drawLink {
@@ -31,6 +40,16 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 300px;
+}
+
+td {
+    padding: 16px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
 .large-font {
@@ -67,4 +86,8 @@ body {
 img.resize {
   width: 200px;
   height: 200px;
+}
+
+img.pad {
+    padding-bottom: 30px;
 }
