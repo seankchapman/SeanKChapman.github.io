@@ -30,7 +30,7 @@ body {
 
 #project-description {
   font-size: 15;
-  display: block;
+  display: padded-block;
   justify-content: center;
   padding-left: 150px;
   padding-right: 150px;
