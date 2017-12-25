@@ -28,6 +28,14 @@ body {
   padding-right: 150px;
 }
 
+#project-description {
+  font-size: 15;
+  display: block;
+  justify-content: center;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
 #optionBar {
     font-size: 15;
     justify-content: center;
