@@ -1,0 +1,27 @@
+#header {
+    display: flex;
+    font-size: 24px;
+    font-family: "Arial";
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#coin-data {
+    font-family: "Arial";
+    display: flex;
+    justify-content: center;
+}
+
+.percent-change-pos {
+    color: green;
+}
+
+.percent-change-neg {
+    color: red;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
