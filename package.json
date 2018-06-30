@@ -1,0 +1,16 @@
+{
+  "name": "personal-website-new",
+  "version": "1.0.0",
+  "description": "a website about me...",
+  "main": "index.js",
+  "dependencies": {
+    "iview": "^2.14.3",
+    "vue": "^2.5.16"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sean Chapman",
+  "license": "ISC"
+}
