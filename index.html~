@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head><!-- import Vue.js -->
+        <script src="//vuejs.org/js/vue.min.js"></script>
+        <!-- import stylesheet -->
+        <link rel="stylesheet" href="//unpkg.com/iview/dist/styles/iview.css">
+        <!-- import iView -->
+        <script src="//unpkg.com/iview/dist/iview.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles/layout.css"></link>
+    <body>
+        <div class="top">
+            <div class="header typewriter">
+                <h1>Sean Chapman</h1>
+            </div>
+            <div>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        // document.getElementById("profile").style.display="none";
+                        document.getElementById("profile").style.opacity="0"
+                        $("#profile").delay(1300).fadeTo("slow", 1);
+
+                        document.getElementById("buttons").style.opacity="0"
+                        document.getElementById("card").style.display="none";
+                        document.getElementById("foot").style.display="none";
+                        $("#buttons").delay(1800).fadeTo("slow", 1);
+                        $("#card").delay(1800).fadeIn("slow");
+                        $("#foot").delay(1800).fadeIn("slow");
+
+
+                        $("#about").click(function() {
+                            $('html, body').animate({
+                                scrollTop: $("#card").offset().top
+                            }, 500);
+                        })
+                    });
+                </script>
+                <img id="profile" class="resize" src="assets/img/prof.png">
+            </div>
+
+            <!-- Buttons! -->
+            <div id="buttons" class="buttons">
+                <!-- About -->
+                <i-button id="about" type="default" size="large" icon="information-circled">About</i-button>
+
+                <!-- Githib -->
+                <a href="https://github.com/SeanKChapman">
+                    <i-button type="default" size="large" icon="social-github">Github</i-button>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:seankchapman@gmail.com">
+                    <i-button type="default" size="large" icon="email">Email</i-button>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/sean-chapman-07bb8814b/">
+                    <i-button type="default" size="large" icon="social-linkedin">LinkedIn</i-button>
+                </a>
+
+                <!-- Resume -->
+                <a href="assets/Resume.pdf">
+                    <i-button type="default" size="large" icon="document-text">Resume</i-button>
+                </a>
+                <!-- Vue -->
+                <script>
+                    new Vue({
+                        el: '#buttons'
+                    })
+                </script>
+            </div>
+        </div>
+        <div class="mid">
+            <div id="card" class="about">
+                <Card  style="width:100vh; background-color: #e8e8e8">
+                    <p slot="title" style="font-size: 24px"> About Me</p>
+                    <Icon slot="extra" size="24" type="ios-list-outline"></Icon>
+                    <Card>
+                        <p style="font-size: 15px">
+                            Greetings, you've found my website! I am a 19 year old
+                            student from Palo Alto, CA. Currently, I am a sophomore studying computer science
+                            at the University of Maryland in College Park, MD. I am interested in web development,
+                            implementiing algorithms, and scripting. Aside from programming, I enjoy fishing,
+                            playing board games, and eating the best pizza.
+                        </p>
+                    </Card>
+                    <!-- <p style="font-size: 15px">
+                        Greetings, you've found my website! I am a 19 year old
+                        student from Palo Alto, CA. Currently, I am a sophomore studying computer science
+                        at the University of Maryland in College Park, MD. I am interested in web development,
+                        implementiing algorithms, and scripting. Aside from programming, I enjoy fishing,
+                        playing board games, and eating the best pizza.
+                    </p> -->
+                </Card>
+                <br>
+                <Card style="width:100vh; background-color: #e8e8e8">
+                    <p slot="title" style="font-size:24px;">Projects<br></p>
+                    <Icon slot="extra" size="24" type="code"></Icon>
+                    <Card>
+                        <p slot="title">Maze Generator</p>
+                        <!-- <Icon slot="extra" size="24" type="social-github"></Icon> -->
+                        <p>
+                            Written in Java, this project uses the Recursive Depth-first-search algorithm to generate a unique maze. The algorithm works by randomly choosing a cell in an arrayList full of cells. Then a neighbor to the current cell being observed is randomly chosen, and the the wall that separates the two cells is deleted. The neighbor is then marked as the current cell. Each cell is marked either visited or unvisited, which corresponds to whether or not the cell will be added to the current cell's list of neighbors. If the one of the neighbors has already been visited, that cell will not be counted as a neighbor.
+                        </p>
+                        <br>
+                        <a href="https://github.com/SeanKChapman/Maze-Generator"><i-button type="primary" shape="circle" icon="social-github">Source Code</i-button></a>
+                    </Card>
+                    <br>
+                    <Card>
+                        <p slot="title">Cryptocurrency Tracker</p>
+                        <p>
+                            Uses the coinmarketcap API to fetch cryptocurrency information and display it in a table. Uses HTML, CSS, and javascript to make the AJAX request and format information in a table.
+                        </p>
+                        <br>
+                        <a href="https://github.com/SeanKChapman/Cryptocurrency-Information"><i-button type="primary" shape="circle" icon="social-github">Source Code</i-button></a>
+                    </Card>
+                    <br>
+                    <Card>
+                        <p slot="title">This website</p>
+                        <p>
+                            Now with more pretty icons and animations than ever!
+                            This website was created using Vue.js, the iView UI Toolkit, and of course HTML, CSS, and JS.
+                        </p>
+                        <br>
+                        <a href="https://github.com/SeanKChapman/SeanKChapman.github.io"><i-button type="primary" shape="circle" icon="social-github">Source Code</i-button></a>
+                    </Card>
+                </Card>
+                <script>
+                    new Vue({
+                        el: '#card',
+                        data() {
+                        }
+                    })
+                </script>
+            </div>
+        </div>
+    </body>
+    <footer id="foot">
+        Built by Sean Chapman
+    </footer>
+</html>
