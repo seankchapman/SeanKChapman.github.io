@@ -1,0 +1,95 @@
+
+header {
+    background: url("https://i.imgur.com/ybA1bRS.png");
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+h1 {
+    font-size: 70px;
+    text-shadow: 2px 2px 5px rgb(44, 44, 44);
+    height: 120px;
+    line-height: 120px;
+    margin-top: 0px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+h2 {
+    padding: 10px;
+    padding-top: 0px;
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 36px;
+    }
+    li {
+        display: block;
+        padding: 7px 0 7px 0;
+    }
+    a {
+        padding: 5px 40% 5px 40%;
+    }
+}
+
+input {
+    padding: 10px;
+    width: 250px;
+}
+
+button {
+    border: 0;
+    padding: 10px;
+    box-shadow: none;
+    border-radius: 0px;
+    color: white;
+}
+
+.topcontainer {
+    display: flex;                  
+    flex-direction: row;            
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.wrapper {
+    text-align: center;
+    padding: 10px;
+}
+
+.startbar {
+    display: inline-block;
+}
+
+#start {
+    background: green;
+}
+
+#reset {
+    background: rgb(177, 43, 43);
+}
+
+#state {
+    display: inline-block;
+    height: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#found {
+    height: 200px;
+}
+
+#missed {
+    height: 200px;
+}
+
+#result {
+    height: 30px;
+    text-align: center;
+}
