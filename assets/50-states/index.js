@@ -61,7 +61,7 @@ var abvMap = {
 }
 
 var keys = Object.keys(abvMap);
-var seconds = 20;
+var seconds = 200;
 var score = 0;
 var found = [];
 var missed = [];
