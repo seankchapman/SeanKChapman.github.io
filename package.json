@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "iview": "^2.14.3",
-    "vue": "^2.5.16"
+    "vue": "^3.0.0"
   },
   "devDependencies": {},
   "scripts": {
